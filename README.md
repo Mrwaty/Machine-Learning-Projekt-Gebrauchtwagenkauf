@@ -1,4 +1,4 @@
-# Machine Learning Projekt: Gebrauchtwagenkauf
+# Maschinelles Lernen Projekt: Gebrauchtwagenkauf
 
 Dieses Projekt beschäftigt sich mit der Klassifikation von Fehlkäufen bei Gebrauchtwagenauktionen mithilfe von Machine Learning.
 
@@ -8,7 +8,7 @@ Die Dokumentation ist in sechs Abschnitte unterteilt:
 
 1. [Einleitung](docs/1.Einleitung.pdf)  
 2. [Explorative Datenanalyse (EDA)](docs/2.EDA.pdf)  
-3. [Outlier-Erkennung](docs/3.Outliers.pdf)  
+3. [Ausreißer-Erkennung](docs/3.Outliers.pdf)  
 4. [Datenvorbereitung](docs/4.Data_Preperation.pdf)  
 5. [Modellierung](docs/5.Modeling.pdf)  
 6. [Interpretation & Ergebnisse](docs/6.Interpretation.pdf)
@@ -59,8 +59,9 @@ Ziel war es, ein Modell zu entwickeln, das auf Basis von Fahrzeugdaten erkennt, 
 
 ## Technologien
 
-- Python (pandas, scikit-learn, matplotlib, seaborn)
-- Jupyter Notebook
-- Git & GitHub
+- Programmiersprache: Python  
+- Bibliotheken: pandas, scikit-learn, matplotlib, seaborn  
+- Entwicklungsumgebung: Jupyter Notebook  
+- Versionsverwaltung: Git und GitHub
 
 
