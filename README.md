@@ -16,6 +16,7 @@ Die Dokumentation ist in sechs Abschnitte unterteilt:
 # Einleitung
 
 Ein US-amerikanischer Gebrauchtwagenhändler kauft Fahrzeuge über Onlineauktionen. Einige Fahrzeuge weisen schwerwiegende Mängel auf („Montagsautos“) und verursachen hohe Folgekosten.
+Ziel war es, ein Modell zu entwickeln, das auf Basis von Fahrzeugdaten erkennt, ob ein Auto ein Fehlkauf darstellt („Montagsauto“).
 
 # Explorative Datenanalyse (EDA)
 
@@ -55,11 +56,6 @@ Ein US-amerikanischer Gebrauchtwagenhändler kauft Fahrzeuge über Onlineauktion
 
 - Aufbau der finalen Datenpipeline
 - Speicherung die vorhergesagten Werte für 'IsBadBuy' (Zielvariable) in einer CSV-Datei
-
-
-## Zielsetzung
-
-Ziel war es, ein Modell zu entwickeln, das auf Basis von Fahrzeugdaten erkennt, ob ein Auto ein Fehlkauf darstellt („Montagsauto“).
 
 ## Technologien
 
