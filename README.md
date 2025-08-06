@@ -1,2 +1,70 @@
-# Machine-Learning-Projekt-Gebrauchtwagenkauf
-Szenario : Du arbeitest als Data Scientist für einen US-amerikanischen Gebrauchtwagenhaendler. Der Haendler kauft gebrauchte Autos günstig in Onlineauktionen oder von anderen Autoverkaeufern, um sie dann auf eigenen Platform gewinnbringend weiterzuverkaufen. Es ist nicht immer einfach zu erkennen, ob sich der Kauf eines Gebrauchtwagens lohnt: Eine der grössten Herausforderungen bei Gebrauchtwagenauktionen ist ein Risiko, dass ein Auto solch schwerwiegende Probleme hat, die verhindern, dass es an Kunden weiterverkauft werden kann. Hierbei handelt es sich um sogenannte 'Montagsautos'-also Autos, die von Hause aus erhebliche Maengel aufgrund von Produktionsfehlern aufweisen, welche die Sicherheit, die Verwendung oder den Wert dieses Autos erheblich beeinträchtigen und gleichzeitig nicht in einer angemessenen Anzahl an Reperaturen oder innerhalb eines bestimmten Zeitraums behoben werden können. Der Kunde hat in diesem Fall Recht, sich den Kaufpreis zurckerstatten zu lassen. Neben den Anschaffungskosten führt den Fehleinkauf von sochen 'Montagsautos' also zu erheblichen Folgekosten, wie z.B. der Einlagerung und Reperatur des Wagens, welche in Verlust beim Weiterverkauf des Fahrzeugs resultieren können. Deshalb ist es deiner Chefin wichtig, möglichst viele Fehlkaufe von 'Montagsautos' auszuschliessen. Um die Einkaeufer im Unternehmen bei der riesigen Anzahl der Angeboten entlasten, sollst du ein Modell entwickeln, welches vorhersagt, ob ein Angebot ein Fehlkauf im Sinne eines Montagsautos wäre. Das darf allerdings nicht dazu führen, dass du viele gute Kaeufe ausgeschlossen werden.
+# Machine Learning Projekt: Gebrauchtwagenkauf
+
+Dieses Projekt beschäftigt sich mit der Klassifikation von Fehlkäufen bei Gebrauchtwagenauktionen mithilfe von Machine Learning.
+
+## Projektstruktur
+
+Die Dokumentation ist in sechs Abschnitte unterteilt:
+
+1. [Einleitung](docs/1.Einleitung.pdf)  
+2. [Explorative Datenanalyse (EDA)](docs/2.EDA.pdf)  
+3. [Outlier-Erkennung](docs/3.Outliers.pdf)  
+4. [Datenvorbereitung](docs/4.Data_Preperation.pdf)  
+5. [Modellierung](docs/5.Modeling.pdf)  
+6. [Interpretation & Ergebnisse](docs/6.Interpretation.pdf)
+
+# Einleitung
+
+Ein US-amerikanischer Gebrauchtwagenhändler kauft Fahrzeuge über Onlineauktionen. Einige Fahrzeuge weisen schwerwiegende Mängel auf („Montagsautos“) und verursachen hohe Folgekosten.
+
+# Explorative Datenanalyse (EDA)
+
+- Datensatz: 65.620 Fahrzeuge, 33 Merkmale  
+- Zielvariable: `IsBadBuy` (unausgeglichen: ca. 12 % Fehlkäufe)
+
+**Analyseschritte:**
+- Visualisierung der Zielverteilung  
+- Heatmap der Korrelationen
+
+# Outliers
+
+- Ausreißeranalyse mit Boxplots und RANSAC  
+
+# Data Preparation (zur Modellierung)
+
+- Train-Test Split
+- Data Imputation
+- OneHotEncoding für kategorische Merkmale
+- SMOTE zur Ausbalancierung der Zielvariable 
+
+# Modeling
+
+**Verwendete Modelle:**
+- Logistische Regression  
+- Random Forest  
+- Entscheidungsbaum  
+- Ensemble-Modell (VotingClassifier)
+
+**Techniken:**
+ 
+- GridSearchCV zur Hyperparameteroptimierung  
+- PCA zur Dimensionsreduktion
+- Feature Selection
+
+# Interpretation
+
+- Aufbau der finalen Datenpipeline
+- Speicherung die vorhergesagten Werte für 'IsBadBuy' (Zielvariable) in einer CSV-Datei
+
+
+## Zielsetzung
+
+Ziel war es, ein Modell zu entwickeln, das auf Basis von Fahrzeugdaten erkennt, ob ein Auto ein Fehlkauf darstellt („Montagsauto“).
+
+## Technologien
+
+- Python (pandas, scikit-learn, matplotlib, seaborn)
+- Jupyter Notebook
+- Git & GitHub
+
+
